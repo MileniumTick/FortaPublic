@@ -37,7 +37,7 @@ function c() {
               children: e("img", {
                 className:
                   "rounded-md border-collapse border-opacity-70 border-2 shadow-lg shadow-slate-400/50",
-                src: "./src/components/images/Imagen1.png",
+                src: "./images/Imagen1.png",
                 alt: "logo",
               }),
             }),
@@ -94,7 +94,7 @@ function c() {
           children: e("img", {
             className:
               "rounded-md border-collapse border-opacity-70 border-2 shadow-lg shadow-slate-400/50",
-            src: "./src/components/images/Imagen1.png",
+            src: "./images/Imagen1.png",
             alt: "logo",
           }),
         }),
