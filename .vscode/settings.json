@@ -1,0 +1,7 @@
+{
+    "tailwindCSS.includeLanguages": {
+        "astro": "astro",
+        "html": "html",
+        "javascript": "javascript"
+    }
+}

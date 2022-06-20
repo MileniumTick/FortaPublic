@@ -1,0 +1,23 @@
+---
+import Layout from '@layouts/Layout.astro'
+import { Inicio } from '@components/Inicio';
+import { Nav } from '@components/CollapseNav';
+import { Precios } from '@components/Precios';
+import { Colaboradores } from '@components/Colaboradores';
+import { Contactos } from '@components/Contactos';
+---
+
+<Layout>
+  <div>
+    <header class="sticky top-0 z-50">
+      <Nav client:visible />
+    </header>
+    <main class="relative">
+      <Inicio client:visible />
+      <Precios client:visible />
+      <Colaboradores client:visible />
+      <Contactos client:visible />
+    </main>
+    <footer></footer>
+  </div>
+</Layout>
