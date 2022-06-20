@@ -140,7 +140,7 @@ export function Inicio() {
                 <div className="flex sticky flex-col p-10 w-full bg-scroll gap-y-2 items-center justify-center bg-gray-600/90 lg:rounded-lg">
                 <h1 className='font-semibold text-center pt-4 text-4xl lg:text-6xl text-gray-300 h-24'>FortaMuni<span className='text-xs text-gray-700 font-bold'>sk</span></h1>
                 <h2 className='pl-10 lg:pt-4 h-1/4 lg:text-4xl text-2xl'>¡Bienvenido!</h2>
-                <p className='pl-10 pb-3 mt-2 lg:text-3xl text-lg'>Donde counstruimos soluciones por tus necesidades.</p>
+                <p className='pl-10 pb-3 mt-2 lg:text-3xl text-lg'>Donde construimos soluciones por tus necesidades.</p>
                 </div>
             </div>
             <div className="sticky grid grid-cols-3 sm:p-4 p-2 top-0 lg:h-screen h-72 flex-col items-center justify-center bg-indigo-50 text-white">

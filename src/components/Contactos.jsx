@@ -1,11 +1,15 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { useState } from "preact/hooks";
-
+import { useState, useEffect } from "preact/hooks";
+import { supabase } from "../lib/supabase.js"
 
 
 
 export function Contactos() {
-
+    useEffect(() => {
+        const subs = supabase.auth.user()
+        return console.log(subs)
+    }, [])
+    
     const [servicio, setServicio] = useState("");
 
     const servicios = ["Obras", "Inventario", "Planes", "Sistemas", "Abogados"];
@@ -25,8 +29,8 @@ export function Contactos() {
     return <>
         <div id="layoutContactos">
             <div className=" min-h-screen p-4 text-gray-700 bg-gradient-to-tr to-gray-100 from-gray-300 md:p-20">
-                <div className="shadow-md shadow-slate-500 grid lg:grid-cols-2 grid-flow-row items-center justify-center" >
-                <h2 className="text-3xl font-medium bg-gradient-to-bl to-gray-300 from-gray-100 h-full text-center align-middle lg:pt-40">Contacto</h2>
+                <div className="lg:shadow-md shadow-slate-500 grid lg:grid-cols-2 grid-flow-row items-center justify-center" >
+                <h2 className="text-3xl font-medium lg:bg-gradient-to-bl to-gray-300 lg:mb-0 mb-0 from-gray-100 h-full text-center align-middle lg:pt-40">Contacto</h2>
                 <form className="flex flex-col lg:pl-4 p-2 gap-4 pt-2 bg-slate-50">
                     <div className="flex flex-col gap-">
                         <label htmlFor="nombre" className="text-lg">Correo</label>
