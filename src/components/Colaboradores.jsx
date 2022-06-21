@@ -1,4 +1,3 @@
-
 /* eslint-disable react/react-in-jsx-scope */
 const colaboradores = [{
     nombre: "Saskya Carolina Montealegre",
